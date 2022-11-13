@@ -14,8 +14,26 @@ body{
 }
 
 .calculator{
-  border-radius: 20px; 
+  border-radius: 20px;
   background-color: Black;
-  width: 80vw;
+  width: 50vw;
   height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.outputLine{
+  height: 10vh;
+  width: 80%;
+  background-color: red;
+}
+
+.rowB, button{
+  margin: 0.1vh;
+}
+
+button{
+  padding: 3vh;
 }
