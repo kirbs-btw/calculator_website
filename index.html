@@ -10,28 +10,33 @@
     <div class="flex">
       <div class="calculator"><script type="text/javascript" src="js/main.js"></script>
           <div class="outputLine">
-
+            <p id="out"></p>
           </div>
           <div class="buttons">
             <div class="rowB">
-              <button type="button" name="button" onclick="addNumber(7)">7</button>
-              <button type="button" name="button" onclick="addNumber(8)">8</button>
-              <button type="button" name="button" onclick="addNumber(9)">9</button>
+              <button type="button" name="button" onclick="addNumber('7')">7</button>
+              <button type="button" name="button" onclick="addNumber('8')">8</button>
+              <button type="button" name="button" onclick="addNumber('9')">9</button>
+              <button type="button" name="button" onclick="addOp('/')">/</button>
             </div>
             <div class="rowB">
-              <button type="button" name="button" onclick="addNumber(4)">4</button>
-              <button type="button" name="button" onclick="addNumber(5)">5</button>
-              <button type="button" name="button" onclick="addNumber(6)">6</button>
+              <button type="button" name="button" onclick="addNumber('4')">4</button>
+              <button type="button" name="button" onclick="addNumber('5')">5</button>
+              <button type="button" name="button" onclick="addNumber('6')">6</button>
+              <button type="button" name="button" onclick="addOp('x')">x</button>
             </div>
             <div class="rowB">
-              <button type="button" name="button" onclick="addNumber(1)">1</button>
-              <button type="button" name="button" onclick="addNumber(2)">2</button>
-              <button type="button" name="button" onclick="addNumber(3)">3</button>
+              <button type="button" name="button" onclick="addNumber('1')">1</button>
+              <button type="button" name="button" onclick="addNumber('2')">2</button>
+              <button type="button" name="button" onclick="addNumber('3')">3</button>
+              <button type="button" name="button" onclick="addOp('-')">-</button>
             </div>
             <div class="rowB">
-              <button type="button" name="button" onclick="addNumber(0)">0</button>
+              <button type="button" name="button" onclick="addNumber('0')">0</button>
               <button type="button" name="button">=</button>
-              <button type="button" name="button" onclick="clear()">AC</button>
+              <button type="button" name="button" onclick="clear()">C</button>
+              <button type="button" name="button" onclick="addOp('+')">+</button>
+              <button type="button" name="button" onclick="calc()">=</button>
             </div>
           </div>
       </div>
