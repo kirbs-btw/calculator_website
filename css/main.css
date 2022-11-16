@@ -1,7 +1,7 @@
 body{
-  padding: 0;
-  margin: 0;
-  /* background-color: #1234ff; */
+  background: linear-gradient(45deg, #3F3B6C, #A3C7D6);
+  background-size: cover;
+  overflow: hidden;
 }
 
 .flex{
@@ -10,30 +10,55 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background: green; */
 }
 
 .calculator{
-  border-radius: 20px;
-  background-color: Black;
-  width: 50vw;
-  height: 80vh;
+  width: 25vw;
+  height: 70vh;
+  background-color: #3F3B6C;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  border-radius: 40px;
+}
+
+.displayLine{
+  width: 20vw;
+  height: 7.5vh;
+  background-color: #9F73AB;
+  margin: 5vh;
+  border-radius: 15px;
+}
+
+.displayLine > *{
+  margin: 0.5vh;
+  color: white;
+  font-size: 2.5vh;
+  font-family: Gotham Black;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-}
-
-.outputLine{
-  height: 10vh;
-  width: 80%;
-  background-color: red;
-}
-
-.rowB, button{
-  margin: 0.1vh;
+  align-items: center;
+  margin: 5vh;
+  width: 100%;
 }
 
 button{
-  padding: 3vh;
+  width: 7.5vh;
+  height: 7.5vh;
+  margin: 0.5vh;
+  border: none;
+  background-color: #9F73AB;
+  color: white;
+  font-family: Gotham Black;
+  font-size: 4vh;
+  border-radius: 10px;
+}
+
+button:active{
+  background-color: #624F82;
 }
