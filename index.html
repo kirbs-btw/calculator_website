@@ -9,7 +9,8 @@
   <body>
     <div class="flex">
       <div class="calculator"><script type="text/javascript" src="js/main.js"></script>
-          <div class="outputLine">
+          <div class="displayLine">
+            <p id = "in"></p>
             <p id="out"></p>
           </div>
           <div class="buttons">
@@ -33,10 +34,9 @@
             </div>
             <div class="rowB">
               <button type="button" name="button" onclick="addNumber('0')">0</button>
-              <button type="button" name="button">=</button>
-              <button type="button" name="button" onclick="clear()">C</button>
-              <button type="button" name="button" onclick="addOp('+')">+</button>
               <button type="button" name="button" onclick="calc()">=</button>
+              <button type="button" name="button" onclick="clearDisplay()">C</button>
+              <button type="button" name="button" onclick="addOp('+')">+</button>
             </div>
           </div>
       </div>
