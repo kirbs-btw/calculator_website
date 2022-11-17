@@ -18,9 +18,14 @@ function addNumber(num){
 }
 
 function addOp(op){
+  if (operator != ""){
+    aStr = doCalc();
+    bStr = "";
+  }
   entryLine += ` ${op} `;
-  display();
   operator = op;
+
+  display();
   switchVar = true;
 }
 
