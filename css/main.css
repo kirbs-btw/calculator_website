@@ -1,11 +1,20 @@
+/*
+working on some responsive design
+ */
+:root{
+  --bgColor: linear-gradient(45deg, #3F3B6C, #A3C7D6);
+  --secColor: #3F3B6C;
+  --triColor: #9F73AB;
+}
+
+
 body{
-  background: linear-gradient(45deg, #3F3B6C, #A3C7D6);
+  background: var(--bgColor);
   background-size: cover;
   overflow: hidden;
 }
 
 .flex{
-  width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -15,20 +24,21 @@ body{
 .calculator{
   width: 25vw;
   height: 70vh;
-  background-color: #3F3B6C;
+  background-color: var(--secColor);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border-radius: 40px;
+  border-radius: 3vh 3vh;
 }
 
 .displayLine{
+  box-sizing: border-box;
   width: 20vw;
   height: 7.5vh;
-  background-color: #9F73AB;
+  background-color: var(--triColor);
   margin: 5vh;
-  border-radius: 15px;
+  border-radius: 1vh 1vh;
 }
 
 .displayLine > *{
@@ -48,15 +58,16 @@ body{
 }
 
 button{
+  box-sizing: border-box;
   width: 7.5vh;
   height: 7.5vh;
   margin: 0.5vh;
   border: none;
-  background-color: #9F73AB;
+  background-color: var(--triColor);
   color: white;
   font-family: Gotham Black;
   font-size: 4vh;
-  border-radius: 10px;
+  border-radius: 1vh 1vh;
 }
 
 button:active{
